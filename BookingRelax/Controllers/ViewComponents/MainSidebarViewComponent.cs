@@ -24,7 +24,7 @@ namespace PaginasWeb.ViewComponents
             var sistemas = MenuHelpers.AddTree("Sistemas", "fa fa-cogs"); // 'administrador' renombrado a 'sistemas' para claridad, icono cambiado
             
 
-            var dashboard = MenuHelpers.AddModule("Evolución de la Cartera", "/Dashboard", "fa-solid fa-chart-line");
+            var dashboard = MenuHelpers.AddModule("Turnos", "/Dashboard", "fa-solid fa-chart-line");
             var dashboard2 = MenuHelpers.AddModule("Ranking de Compañías / Productores", "/Dashboard/Index2", "fa-solid fa-chart-simple");
             var dashboard3 = MenuHelpers.AddModule("Producción de Compañías Estratégicas", "/Dashboard/Index3", "fa-solid fa-building");    
 
@@ -84,8 +84,8 @@ namespace PaginasWeb.ViewComponents
             System.Diagnostics.Debug.WriteLine($"[SidebarVC] total items root = {sidebars.Count}");
 
             // Pasamos el nombre de la app al ViewBag
-            ViewBag.AppName = "Commons Net 8";
-            ViewBag.LogoPath = "/img/logo.png"; // Ajusta la ruta según tu proyecto
+            ViewBag.AppName = "Booking Relax";
+            ViewBag.LogoPath = "/img/logo-1.png"; // Ajusta la ruta según tu proyecto
 
 
             return View(sidebars);           //  <--  pasa el modelo
